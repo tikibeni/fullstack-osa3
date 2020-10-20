@@ -5,6 +5,7 @@ const app = express()
 
 app.use(cors())
 app.use(express.json())
+app.use(express.static('build'))
 app.use(morgan('tiny'))
 morgan.token('person', (req, res) => {
     return JSON.stringify(req.body)
@@ -98,8 +99,6 @@ app.post('/api/persons', (req, res) => {
     persons = persons.concat(person)
     res.json(person)
 })
-
-
 
 const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
