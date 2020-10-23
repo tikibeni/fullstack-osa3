@@ -1,1 +1,1 @@
-Herokun backendiin [tästä](http://infinite-dusk-85714.herokuapp.com/api/persons)
+Herokun sovellukseen [tästä](http://infinite-dusk-85714.herokuapp.com)
